@@ -1,10 +1,4 @@
-from flask import Flask
-from api import routes
-
-app = Flask(__name__)
-app.register_blueprint(routes.bp)
-# Simulate database
-db = {}
+from api.main import app
 
 if __name__ == "__main__":
     app.run(debug=True)
